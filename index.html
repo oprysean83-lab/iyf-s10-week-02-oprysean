@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dennis Kibathi | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dennis Kibathi</h1>
+        <p>Welcome to my portfolio! I am a web developer in training.</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I love coding, learning new skills, and building projects that solve problems. My goal is to grow as a developer and create amazing websites.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript (DOM, Events)</li>
+            <li>Responsive Design</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Personal Portfolio Website</li>
+            <li>Simple Calculator</li>
+            <li>Interactive Quiz App</li>
+        </ul>
+        <button id="btn">Click Me!</button>
+        <p id="text"></p>
+    </section>
+
+    <footer>
+        <p>Contact me: dennis@example.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>       
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+section {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+// Grab the button and text paragraph
+const btn = document.getElementById("btn");
+const text = document.getElementById("text");
+
+// When button is clicked, show message
+btn.addEventListener("click", function() {
+    text.textContent = "Hello! Thanks for visiting my portfolio!";
+    text.style.color = "#4CAF50";
+    text.style.fontWeight = "bold";
+});
